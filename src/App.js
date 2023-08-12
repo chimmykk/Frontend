@@ -52,7 +52,7 @@ function App() {
             alt="Merged Image"
             style={{ maxWidth: '40%', marginTop: '20px' }}
           />
-          <button onClick={handleDownload}>Download Merged Image</button>
+          <button onClick={handleDownload}>Download Memed Image</button>
         </div>
       )}
       <div>
@@ -63,6 +63,7 @@ function App() {
           value={ethereumAddress}
           onChange={handleEthereumAddressChange}
         />
+            <p> currently the drop nft is not working check later haha (waiting for mintpad api)</p>
         <button onClick={handleDropEthereumAddress}>Drop Ethereum Address</button>
       </div>
     </div>
