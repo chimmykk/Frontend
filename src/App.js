@@ -7,7 +7,7 @@ function App() {
 
   const handleMergeImages = async () => {
     try {
-      const response = await fetch(`http://localhost:3001/merge?imageNumber=${imageNumber}`);
+      const response = await fetch(`https://node-server-1c0x.onrender.com/merge?imageNumber=${imageNumber}`);
       const mergedImageBlob = await response.blob();
       const mergedImageUrl = URL.createObjectURL(mergedImageBlob);
       setMergedImageUrl(mergedImageUrl);
